@@ -2,37 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <title>Project 1 </title>
 </head>
 <body>
     <header>
-        <h1>
-            Hello World!, Rudrava Here
+        <h1 class="heading">
+            Hello World!, <span class="headerSpan">Rudrava Here</span>  
         </h1>
-        <hr>
     </header>
     <main>
-        <div class="intro">
+        <section class="container intro">
             <div class="introVid">
                 <img src="https://media.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif" ></img>
             </div>
-            <h1>
-                What do i do? 
- </h1>
-                <p>Im a student of <a href="https://sittechno.org">SIT(Siliguri Institute Of Technology)</a>. I love to 
-                learn new technoogies just for fun and if needed apply the knowdge. At this point apart from being a 
-                student Im a freelancer working as Web developer.</p>
-            <h1>
-                How I work ?   
-            </h1>
-            <p>
-                My motivations are to stabilize and provide clarity through curiosity. That tends to manifest as creating (hopefully) just enough process. Checklists are my absolute favorite. white_check_mark If I'm too much in my head, feel free to nudge me to share what's in my brain. 
-            </p>
-        </div>
-        <h1>
+            <div class="content">
+                <h1 class="heading">
+                    What do i do? 
+                </h1>
+                    <p>Im a student of <a href="https://sittechno.org">SIT(Siliguri Institute Of Technology)</a>. I love to 
+                    learn new technoogies just for fun and if needed apply the knowdge. At this point apart from being a 
+                    student Im a freelancer working as Web developer.</p>
+            </div>
+            <div class="content">
+                <h1 class="heading">
+                    How I work ?   
+                </h1>
+                <p>
+                    My motivations are to stabilize and provide clarity through curiosity. That tends to manifest as creating (hopefully) just enough process. Checklists are my absolute favorite. white_check_mark If I'm too much in my head, feel free to nudge me to share what's in my brain. 
+                </p>
+            </div>
+        </section>
+        <section class="container contactSection">
+        <h1 class="heading niceHeading ">
             Contact Me
         </h1>
-        <form>
+        <form class="contactForm">
             <div class="formElement">
                 <label for="fName" class="inpLabel">
                     First Name
@@ -58,12 +67,13 @@
                 <input type="tel" class="formInp" id="ConNum">
             </div>
             <div class="fromElement">
-                <button type="submit">Contact Me</button>
+                <button class="btn" type="submit">Contact Me</button>
             </div>
         </form>
-
-        <h1>
-            What can i do for you !
+    </section>
+    <section class="container showcase ">
+    <h1 class="heading niceHeading spaceHeading">
+        What can i do for you !
         </h1>
 
         <table>
@@ -119,7 +129,7 @@
             </tr>
             <tr>
                 <td>
-                    <img src="https://raw.githubusercontent.com/Rudrava/Rudrava/master/mongodb.png" alt="">
+                    <img src="https://raw.githubusercontent.com/Rudrava/Rudrava/master/mongoDb.png" alt="">
                 </td>
                 <td>MongoDb</td>
                 <td>
@@ -127,22 +137,33 @@
             </tr>
             
         </table>
-        <hr>
-        <h1>
-            BYE BYE
-        </h1>
-        <video src="./videoplayback.mp4" controls autoplay></video>
+    </section>
+        
+        <section class="videoSection container ">
+            <h1 class="heading niceHeading spaceHeading">
+                Jam With ME !!
+            </h1>
+            <video id="video" src="./videoplayback.mp4"  autoplay loop></video>
+        </section>
     </main>
     <footer>
-        <hr>
         <div class="footerLogo">
-            RUDRAVA MUKHERJEE
+            RUDRAVA
         </div>
         <div class="footerContact">
-            email: <a  href="mailto:rudravamukherjee.2001@gmail.com">rudravamukherjee.2001@gmail.com</a>
-            twitter: <a href="https://twitter.com/rudra_m1">@rudra_m1</a>
-            instagram: <a href="https://instagram.com/rudrava.js">rudrava.js</a>
-            LinkedIn: <a href="https://www.linkedin.com/in/rudrava-mukherjee">Rudrava Mukherjee</a>
+            
+            <div class="fcEle">
+                email: <a  href="mailto:rudravamukherjee.2001@gmail.com">rudravamukherjee.2001@gmail.com</a>
+            </div>
+            <div class="fcEle">
+                twitter: <a href="https://twitter.com/rudra_m1">@rudra_m1</a>
+            </div>
+            <div class="fcEle">
+                instagram: <a href="https://instagram.com/rudrava.js">rudrava.js</a>
+            </div>
+            <div class="fcEle">
+                LinkedIn: <a href="https://www.linkedin.com/in/rudrava-mukherjee">Rudrava Mukherjee</a>
+            </div>        
         </div>
     </footer>
 </body>
